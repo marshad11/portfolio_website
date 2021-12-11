@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleBtn(){
+            const toggle =document.querySelector('.toggle')
+            const sidebar =document.querySelector('.sidebar')
+            const shadow =document.querySelector('.shadow')
+            toggle.classList.toggle('active')
+            sidebar.classList.toggle('active')
+            shadow.classList.toggle('active')
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="shadow" onclick="toggleBtn()"> </div>
+    <div class="sidebar" onclick="toggleBtn()">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggleBtn()"></div>
+    <!--=======Home Section Starts==========-->
+    <section class="home" id="home">
+        <div class="image">
+            <img src="./images/29895368.png" alt="" height="100%" width="100%">
+        </div>
+        <div class="text">
+            <div class="logo"></div>
+            <div class="name">
+                <p class="one">Hey! I am</p>
+                <h2>Arshad Shabbir</h2>
+                <p class="one">Full Stack Website Developer</p>
+                <p class="peragraph">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam odit minima accusantium, corporis doloribus delectus quos iste velit itaque maxime sequi debitis libero dolor obcaecati ducimus aliquam veniam nihil distinctio.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Home Section Ends========== -->
+        
+    <!-- ==========About Starts========== -->
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2> About </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, maiores?</p>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="images/hero-bg.svg" alt="" height="100%" width="100%">
+            </div>
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatibus omnis sequi maxime molestiae excepturi ullam vero! Dicta suscipit repellat reiciendis deleniti quos qui obcaecati error, corrupti, vel minima itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi soluta quam aliquam laboriosam cum molestiae error eum ut alias veritatis blanditiis nam, delectus id, ex ad eligendi odio. Animi!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatibus omnis sequi maxime molestiae excepturi ullam vero! Dicta suscipit repellat reiciendis deleniti quos qui obcaecati error, corrupti, vel minima itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi soluta quam aliquam laboriosam cum molestiae error eum ut alias veritatis blanditiis nam, delectus id, ex ad eligendi odio. Animi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatibus omnis sequi maxime molestiae excepturi ullam vero! Dicta suscipit repellat reiciendis deleniti quos qui obcaecati error, corrupti, vel minima itaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi soluta quam aliquam laboriosam cum molestiae error eum ut alias veritatis blanditiis nam, delectus id, ex ad eligendi odio. Animi!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ==========About Ends========== -->
+
+    <!-- ==========Services Starts========== -->
+
+    <section class="services" id="services">
+        <div class="title">
+            <h2> Services </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, maiores?</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ser.jpg" alt="" width="100%">
+                </div>
+                <h2> Frontend Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, voluptatum.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ser.jpg" alt="" width="100%">
+                </div>
+                <h2> Frontend Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, voluptatum.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ser.jpg" alt="" width="100%">
+                </div>
+                <h2> Frontend Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, voluptatum.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ser.jpg" alt="" width="100%">
+                </div>
+                <h2> Frontend Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, voluptatum.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ser.jpg" alt="" width="100%">
+                </div>
+                <h2> Frontend Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, voluptatum.</p>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ser.jpg" alt="" width="100%">
+                </div>
+                <h2> Frontend Developer</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, voluptatum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========Services Ends========== -->
+
+    <!-- ==========Contact Us Starts========== -->
+
+    <section class="contact" id="contact">
+        <h2 class="title"> Contact Us </h2>
+        <div class="container">
+            <form action="/form">
+                <div class="f_row">
+                    <label for="first"> First Name :</label>
+                    <input type="text" id="first" placeholder="First Name">
+                    <label for="last"> Last Name :</label>
+                    <input type="text" id="last" placeholder="Last Name">
+                </div>
+                <br><br>
+                <div class="s_row">
+                    <label for="email">Email Address :</label>
+                    <input type="email" id="email" placeholder="Enter your Email Address">
+                    <label for="contact_n">Contact No. :</label>
+                    <input type="number" id="contact_n" placeholder="Enter Phone Number">
+                </div>
+                <br>
+                <div class="t_row">
+                    <div class="label">
+                        <label for="message"> Message : </label>
+                    </div>
+                    <div class="textarea">
+                        <textarea id="message" rows="5" cols="40">    
+                        </textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="but">
+                    <button> Submit </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © 2020 - 2022 DeveloperEdu.Org | All Rights Reserved</p>
+    </footer>
+
+    <!-- ==========Contact Us Ends========== -->
+</body>
+</html>
